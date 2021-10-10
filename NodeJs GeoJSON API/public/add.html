@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add store</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        width: 100%;
+      }
+      #map {
+        height: 70vh;
+        width: 90%;
+        margin: 20px auto;
+      }
+    </style>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Add Store</h1>
+    <hr />
+    <form id="store-form">
+      <input type="text" id="store-id" placeholder="store-id" />
+      <input type="text" id="store-address" placeholder="store-address" />
+      <button type="submit">Add store</button>
+    </form>
+    <hr />
+    <a href="index.html">Back to home</a>
+
+    <div id="map"></div>
+
+    <script src="js/add.js" defer></script>
+    <script src="js/map.js" defer></script>
+  </body>
+</html>
